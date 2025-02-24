@@ -61,15 +61,15 @@ function App() {
           )}
         </select>
 
-        <div className="holidays">
+        <ul className="holidays">
           {countryHolidays.map((holiday) => {
             return (
-              <div key={holiday.startDate}>
+              <li key={holiday.startDate}>
                 <p>{holiday.startDate} <strong>{holiday.name[0] && holiday.name[0].text}</strong></p>
-              </div>
+              </li>
             )
           })}
-        </div>
+        </ul>
       </div>
     </>
   )
