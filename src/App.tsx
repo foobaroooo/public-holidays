@@ -64,7 +64,7 @@ function App() {
         <ul className="holidays">
           {countryHolidays.map((holiday) => {
             return (
-              <li key={holiday.startDate}>
+              <li key={crypto.randomUUID()}>
                 <p>{holiday.startDate} <strong>{holiday.name[0] && holiday.name[0].text}</strong></p>
               </li>
             )
